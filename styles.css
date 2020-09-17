@@ -1,16 +1,47 @@
+ol{
+    list-style-type: none;
+}
+
 #menu{
-    background-color: blue;
+    background-color: #f9c852;
     height: 7rem;}
 
-#menu li{
+#menu ul li{
+    float:left;
+    margin: 0 1.5rem;
+
+}
+
+#menu ul{
+    margin: 0;
+    list-style-type: none;
+}
+
+
+
+.lien-menu{
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.lien-menu:hover{
+    font-size: 2.5rem;
+}
+
+nav{
     float:right;
+    line-height: 7rem;
+
+
 }
 
 #menu img{
     float: left;
     width: 100px;
-    height: 100px;
+    height: 7rem;
 }
+
+
 
 #main-image{
     background-image: url('images/banniere.jpg');
@@ -18,7 +49,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
 }
 
 #slogan{
@@ -26,4 +56,45 @@
     margin: 0rem auto 3rem auto;
     width: 20rem;
     padding-top: 3rem;
+}
+#grid{
+    padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    #grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .5em;
+    }
+}
+
+#joueurs{
+    background: #bbb;
+    padding: 1rem;
+    background-image: url(images/texture.jpg);
+}
+
+#grid li{
+    border: solid;
+    background-color:	#f9c852;
+    padding: 1rem;
+}
+
+
+.stat{
+    display:none;
+    font-size: 1.5rem;
+}
+.stat:hover{
+color:blue;
+}
+
+#joueurs li:hover {
+    border:solid 	#981717;
+
+}
+
+#joueurs li:hover .stat{
+display:block;
 }

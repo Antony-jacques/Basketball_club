@@ -52,11 +52,28 @@ nav{
     box-sizing: border-box;
 }
 
+@media(max-width:600px){
+    nav{
+        display: none;
+    }
+
+    .nom-joueur{
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        color: white;
+    }
+
+    ol .grid-item{
+        position: relative;
+    }
+}
+
 
 
 #main-image{
     background-image: url('images/banniere.jpg');
-    height: 25rem;
+    height: 32rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -64,8 +81,14 @@ nav{
 
 #slogan{
     margin: 0rem auto 3rem auto;
-    width: 20rem;
-    padding-top: 3rem;
+    width: 100%;
+    padding-top: 9rem;
+    color: #fff;
+    text-align: center;
+}
+
+#slogan h1{
+    font-size: 2.5rem;
 }
 
 #accueil{
@@ -77,19 +100,33 @@ nav{
     text-align: justify;
 }
 
-#grid{
+.grid{
     padding: 0.5rem;
     transition: .3s ease;
 
 }
 
 @media (min-width: 768px) {
-    #grid {
+    .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: .5em;
     }
 }
+
+@media (min-width: 768px) {
+    .grid2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .5em;
+    }
+
+    #retour-accueil{
+        display: none;
+    }
+}
+
+
 
 #joueurs{
     background: #fff8ee;
@@ -141,6 +178,7 @@ opacity: 1;
 .inputs{
     border-radius: 2rem;
     padding: .5rem;
+    width:15rem;
     
 }
 
@@ -174,13 +212,20 @@ section{
     padding: 1rem;
 }
 
-.contact-row{
-    display: flex;
-    justify-content: center;
+.contact-form{
+    margin: 0 auto;
+    text-align: center;
 }
 
-.contact-box{
-    margin:0 auto;
+#retour-accueil{
+    font-size: 4rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    color: brown;
+    text-decoration: none;
+    border: solid;
+    border-style: dashed;
 }
 
 

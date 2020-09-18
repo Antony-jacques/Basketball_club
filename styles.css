@@ -11,7 +11,10 @@ ol{
 
 #menu{
     background-color: #f9c852;
-    height: 7rem;}
+    height: 7rem;
+    position: fixed;
+    width: 100%;
+}
 
 #menu ul li{
     float:left;
@@ -76,6 +79,8 @@ nav{
 
 #grid{
     padding: 0.5rem;
+    transition: .3s ease;
+
 }
 
 @media (min-width: 768px) {
@@ -87,16 +92,13 @@ nav{
 }
 
 #joueurs{
-    background: #bbb;
+    background: #fff8ee;
     padding: 1rem;
-    background-image: url(images/texture.jpg);
+    /*background-image: url(images/texture.jpg);*/
 }
 
-#joueurs h2{
-    background: rgba(255, 255, 255, 0.7);
-}
 
-#grid li{
+.grid-item{
    
     background-color:	#f9c852;
     padding: 1rem;
@@ -115,9 +117,11 @@ nav{
 .stat{
     display:none;
     font-size: 1.5rem;
+    opacity:0;
 }
 .stat:hover{
 color:blue;
+
 }
 
 #joueurs li:hover {
@@ -131,6 +135,7 @@ color:blue;
 
 #joueurs li:hover .stat{
 display:block;
+opacity: 1;
 }
 
 .inputs{
@@ -177,3 +182,6 @@ section{
 .contact-box{
     margin:0 auto;
 }
+
+
+

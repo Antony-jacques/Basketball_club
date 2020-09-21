@@ -67,6 +67,10 @@ nav{
     ol .grid-item{
         position: relative;
     }
+
+    #menu{
+        position: static;
+    }
 }
 
 
@@ -89,6 +93,7 @@ nav{
 
 #slogan h1{
     font-size: 2.5rem;
+    padding: 1rem;
 }
 
 #accueil{
